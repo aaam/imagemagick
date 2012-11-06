@@ -17,9 +17,9 @@
 # limitations under the License.
 #
 
-case node[:platform]
-when "redhat", "centos", "fedora"
+case node[:platform_family]
+when "redhat", "fedora"
   package "ImageMagick"
-when "debian", "ubuntu"
+when "debian"
   package "imagemagick"
 end
