@@ -16,7 +16,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-include_recipe "imagemagick"
-include_recipe "imagemagick::devel"
+include_recipe 'imagemagick'
+include_recipe 'imagemagick::devel'
 
-gem_package "rmagick"
+gem_package 'rmagick'
